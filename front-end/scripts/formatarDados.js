@@ -9,6 +9,12 @@ function selecionarCorTipo(tipo) {
 }
 
 export function formatarTipo(tipo) {
+    if (!tipo) {
+        return [
+            " ",
+            "white"
+        ]
+    }
     return [
         capitalizeText(tipo),
         selecionarCorTipo(tipo)
