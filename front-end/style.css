@@ -1,0 +1,43 @@
+* {
+    color: white;
+}
+
+body {
+    background-color: hsl(0, 0%, 10%);
+}
+
+#tela {
+    height: 95vh;
+    background-color: hsl(0, 0%, 15%);
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#pokemon {
+    height: 90%;
+    background-color: hsl(0, 0%, 20%);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.info {
+    width: 500px;
+}
+
+.tipos, .identificadores {
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+}
+#busca {
+    margin-top: 15px;
+}
+
+input, button {
+    color: black;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokemonAPI</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="tela">
+        <div id="pokemon">
+            <div class="info identificadores">
+                <b># <span id="numDex">000</span></b>
+                <b><span id="nome">NOME</span></b>
+            </div>
+            <div class="info"><img src="" alt="" id="imagem"></div>
+            <div class="info tipos">
+                <span id="tipo1">TIPO1</span>
+                <span id="tipo2">TIPO2</span>
+            </div>
+            <div class="info"><span id="peso">PESO</span></div>
+            <div class="info"><span id="altura">ALTURA</span></div>
+        </div>
+        <div id="busca">
+            <input type="text" placeholder="Número do Pokémon" id="inputNumero">
+            <button type="submit" id="botaoBusca">Procurar</button>
+        </div>
+    </div>
+    <script type="module" src="./scripts/main.js"></script>
+</body>
+</html>
