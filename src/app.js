@@ -1,14 +1,18 @@
 import express from "express"
-import "dotnev/config"
+import "dotenv/config"
 
 const app = express()
 
 export default app
 
+import rotaPokemon from "./routes/pokemon.routes.js"
+
 app.use(express.json())
+
+app.use("/pokemon", rotaPokemon)
 
 app.use((req, res) => {
     res.status(404).json({
-        erro: "Pokemon nao encontrado"
+        erro: "Rota nao encontrada"
     })
 })
