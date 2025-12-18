@@ -25,6 +25,10 @@ const tagAlturaPokemon = document.getElementById("tagAltura")
 async function atualizarInformacoes() {
     const idDex = inputNumero.value
     const infos = await pegarInfo(idDex)
+    if (!infos) {
+        mostrarErro()
+        return
+    }
     const {name, id, type1, type2, weight, height, linkimg} = infos
 
     atualizarImagemPokemon(linkimg)
@@ -69,11 +73,18 @@ function atualizarTiposPokemon(tipo1, tipo2) {
 }
 
 function atualizarPesoPokemon(peso) {
-    pesoPokemon.innerText = peso / 10
-    tagPesoPokemon.innerText = "Peso"
+    const pesoFormatado = peso / 10
+    pesoPokemon.innerText = `${pesoFormatado} Kg`
+    tagPesoPokemon.innerText = "Peso "
 }
 
 function atualizarAlturaPokemon(altura) {
-    alturaPokemon.innerText = altura / 10
+    const alturaFormatada = altura / 10
+    alturaPokemon.innerText = `${alturaFormatada} M`
     tagAlturaPokemon.innerText = "Altura"
+}
+
+function mostrarErro() {
+    nomePokemon.innerText = "Pokemon não encontrado"
+    numDex.innerText = "# ???"
 }
