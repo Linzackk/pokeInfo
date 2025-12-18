@@ -56,4 +56,6 @@ export function atualizarAlturaPokemon(altura) {
 export function mostrarErro() {
     atualizarIdPokemon("# ???")
     atualizarNomePokemon("Pokemon não encontrado")
+    atualizarImagemPokemon("/front-end/imagens/missigno.png")
+    atualizarTiposPokemon("???")
 }
