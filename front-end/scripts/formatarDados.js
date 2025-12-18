@@ -25,5 +25,3 @@ export function formatarNumDex(numDex) {
     const numFormatado = String(numDex).padStart(3, '0')
     return `# ${numFormatado}`
 }
-
-console.log(formatarNumDex(1))

@@ -1,5 +1,5 @@
-import { salvarPokemon } from "./src/database/save.js";
+import { salvarPokemon} from "./src/database/save.js"
+import { atualizarPokemon } from "./src/database/update.js"
+import { pegarUrlImg } from "./src/fetchPokemon/fetchInfo.js"
 
-// for (let i = 2; i < 152; i++) {
-//     await salvarPokemon(i)
-// }
+await salvarPokemon(761)
