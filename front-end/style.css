@@ -38,6 +38,10 @@ body {
     margin-top: 15px;
 }
 
+#imagem {
+    width: 100px;
+}
+
 input, button {
     color: black;
 }

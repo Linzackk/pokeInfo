@@ -15,9 +15,15 @@ const pesoPokemon = document.getElementById("peso")
 const alturaPokemon = document.getElementById("altura")
 
 async function atualizarInformacoes() {
-    const id = inputNumero.value
-    const infos = await pegarInfo(id)
-    nomePokemon.innerText = infos.nome
-    numDex.innerText = infos.id
-    imagemPokemon.src = ""
+    const idDex = inputNumero.value
+    const infos = await pegarInfo(idDex)
+    const {name, id, type1, type2, weight, height} = infos
+
+    nomePokemon.innerText = name
+    numDex.innerText = `# ${id}`
+    imagemPokemon.src = "./imagens/pokebola.png"
+    tipo1Pokemon.innerText = type1
+    tipo2Pokemon.innerText = type2
+    pesoPokemon.innerText = weight
+    alturaPokemon.innerText = height
 }
