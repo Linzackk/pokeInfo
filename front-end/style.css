@@ -15,31 +15,62 @@ body {
     align-items: center;
 }
 
-#pokemon {
-    height: 90%;
+#cartaoPokemon {
+    height: 400px;
     background-color: hsl(0, 0%, 20%);
+
     display: flex;
     flex-direction: column;
+
     text-align: center;
     justify-content: space-around;
     align-items: center;
+
+    border-radius: 15px;
 }
 
 .info {
-    width: 500px;
+    width: 300px;
 }
 
-.tipos, .identificadores {
-    width: 200px;
+.tipos {
+    width: 100px;
     display: flex;
     justify-content: space-around;
 }
+
+.identificadores {
+    display: flex;
+    justify-content: space-around;
+    width: 200px;
+}
+
+.medidas {
+    display: flex;
+    justify-content: space-around;
+    width: 100px;
+}
+
 #busca {
     margin-top: 15px;
 }
 
 #imagem {
-    width: 100px;
+    width: 200px;
+
+}
+
+.medidas {
+    color: #7e878d;
+}
+
+.peso, .altura {
+    display: flex;
+    flex-direction: column;
+}
+
+.peso > span , .altura > span {
+    margin-bottom: 5px;
 }
 
 input, button {

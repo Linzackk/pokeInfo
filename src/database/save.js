@@ -3,8 +3,8 @@ import { pegarInformacoes } from "../fetchPokemon/fetchInfo.js"
 
 export async function salvarPokemon(id) {
     const query = `
-        INSERT INTO pokemons(id, name, height, weight, type1, type2)
-        VALUES ($1, $2, $3, $4, $5, $6)
+        INSERT INTO pokemons(id, name, height, weight, type1, type2, linkImg)
+        VALUES ($1, $2, $3, $4, $5, $6, $7)
         ON CONFLICT (id) DO NOTHING
     `
     const infos = await pegarInformacoes(id)

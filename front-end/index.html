@@ -8,24 +8,34 @@
 </head>
 <body>
     <div id="tela">
-        <div id="pokemon">
+        <div id="cartaoPokemon">
             <div class="info identificadores">
                 <b><span id="numDex"></span></b>
                 <b><span id="nome"></span></b>
             </div>
             <div class="info"><img src="#" alt="" id="imagem"></div>
-            <div class="info tipos">
-                <span id="tipo1"></span>
-                <span id="tipo2"></span>
+            <div id="tipos" class="info tipos">
             </div>
-            <div class="info">
-                <span id="peso"></span>
-                <span id="altura"></span>
+            <div class="info medidas">
+                <div class="peso">
+                    <span id="tagPeso"></span>
+                    <span id="peso"></span>
+                </div>             
+                
+                <div class="altura">
+                    <span id="tagAltura"></span>
+                    <span id="altura"></span>
+                </div>
             </div>
         </div>
         <div id="busca">
-            <input type="text" placeholder="Número do Pokémon" id="inputNumero">
-            <button type="submit" id="botaoBusca">Procurar</button>
+            <form action="" id="formPokemon">
+                <input 
+                    type="text" 
+                    placeholder="Número do Pokémon" 
+                    id="inputNumero"
+                >
+            </form>
         </div>
     </div>
     <script type="module" src="./scripts/main.js"></script>
