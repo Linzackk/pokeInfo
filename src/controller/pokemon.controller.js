@@ -1,5 +1,7 @@
 import { lerInfoPokemon } from "../database/read.js"
 
+// linha so par atualizar a pasta
+
 export async function lerInformacoesPokemon(req, res) {
     const id = Number(req.params.id)
     if (!id) {
